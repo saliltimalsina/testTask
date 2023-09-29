@@ -1,5 +1,3 @@
-Certainly, I'll provide the network design without the cloud services component. Here's the revised network design description:
-
 **Network Design:**
 
 **Assumptions and Requirements:**
@@ -42,20 +40,21 @@ The network topology is divided into three primary segments:
    - DHCP Range: 25.1.0.1 to 25.1.0.254
    - Static IPs for the security camera servers.
 
-**Recommended Hardware:**
-- **Internet Gateway Router:** Cisco ASR 1000 Series
-- **Core Switches:** Cisco Catalyst 9000 Series
-- **Access Switches:** Cisco Catalyst 3000 Series
-- **Routers:** Cisco ISR 4000 Series
-- **Firewall:** Palo Alto Networks PA-Series
-- **VPN Gateway:** Cisco ASA Firewall with AnyConnect
-- **IDS/IPS:** Snort IDS/IPS
 
-**Security Controls:**
-- **Access Control Lists (ACLs):** ACLs are implemented on routers and switches to control and filter traffic between subnets, enhancing network security.
-- **Regular Patching:** All network devices and servers undergo regular security patching to protect against vulnerabilities.
-- **Multi-Factor Authentication (MFA):** MFA is enforced for accessing network resources, providing an additional layer of security.
-- **Encryption:** Strong encryption protocols (e.g., TLS) are employed for securing data in transit and at rest, ensuring the confidentiality and integrity of sensitive information.
-- **Continuous Monitoring:** Intrusion detection and prevention systems (IDS/IPS) continuously monitor network traffic, alerting administrators to potential threats or attacks.
+**Explanation of Recommended Hardware:**
 
-This comprehensive network design caters to the company's requirements, combining security, scalability, redundancy, and efficient network management to support its manufacturing and administrative operations effectively. Please note that the cloud services component has been excluded as per your request.
+- **Internet Gateway Router:** The Cisco ASR 1000 Series router is recommended as the Internet Gateway Router. It is a high-performance router suitable for small to medium-sized enterprises. It provides advanced security features, including firewall capabilities, to protect the network from external threats while allowing for efficient internet connectivity.
+
+- **Core Switches:** The Cisco Catalyst 9000 Series switches are ideal for the core of the network. These switches offer high reliability, scalability, and advanced network services. They can handle the traffic between various segments efficiently.
+
+- **Access Switches:** The Cisco Catalyst 3000 Series switches serve as access switches in the network. They provide reliable connectivity to end-user devices in both the Factory and Office segments. These switches are known for their performance and support for various VLANs.
+
+- **Routers:** Cisco ISR 4000 Series routers are used within the network to provide routing capabilities. These routers offer high throughput and flexibility, making them suitable for connecting different segments and routing traffic effectively.
+
+- **Firewall:** The Palo Alto Networks PA-Series firewall is recommended for network security. It provides next-generation firewall capabilities, intrusion prevention, and application visibility and control. This firewall enhances the security of the network perimeter.
+
+- **VPN Gateway:** The Cisco ASA Firewall with AnyConnect is used as a VPN gateway to enable secure remote access to the network. It supports VPN connectivity for remote workers and ensures secure data transmission.
+
+- **IDS/IPS:** The Snort IDS/IPS system is deployed for intrusion detection and prevention. It helps monitor network traffic for suspicious activity and provides alerts to administrators in real-time.
+
+This selection of hardware components is designed to meet the company's network requirements, ensuring reliable connectivity, security, and scalability while accommodating the unique needs of the Factory, Office, and Security Cameras segments.
