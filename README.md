@@ -1,12 +1,36 @@
 **Network Design:**
 
+
 **Assumptions and Requirements:**
-1. The company, a small manufacturing firm, has specific network requirements to support its operations.
-2. The network must accommodate three distinct segments: Factory, Office, and Security Cameras.
-3. IP addressing should adhere to the requirement of using student IDs (12230053 and 12236825) as the starting digits (53 and 25).
-4. IPv4 addresses with /16 or /24 network masks will be employed.
-5. Network security, scalability, and redundancy are key considerations.
-6. The network includes an Internet Gateway Router to provide internet connectivity.
+
+The network design for the small manufacturing company is driven by the following key assumptions and requirements:
+
+**Company Assumptions:**
+
+1. **Single Location:** The company is based in a single location with two attached buildings: the factory and the office building. All network infrastructure and operations are centralized within this location.
+
+2. **Network-Controlled Equipment:** Most of the factory's machinery and equipment are network-controlled and monitored. This includes machinery with wired LAN interfaces and those with wireless WiFi interfaces.
+
+3. **Cloud Services Utilization:** While the company uses cloud services for some servers like the website and email, critical and sensitive data such as engineering designs and financial information are stored on local servers within the office building.
+
+4. **Employee Diversity:** The company employs a diverse range of staff engaged in various functions, including sales, customer support, engineering design, and business administration. The network must cater to the needs of all these departments.
+
+5. **IP-Based Security Cameras:** IP-based security cameras are deployed both inside and outside the buildings for security monitoring. These cameras stream video back to a local server within the office building for storage and monitoring purposes.
+
+**Company Requirements:**
+
+1. **Network Segmentation:** The company requires a well-defined network segmentation to isolate and manage traffic between the factory, office, and security cameras segments. This segmentation is crucial for enhancing security and efficient network management.
+
+2. **IP Subnets:** The network must provide at least three different IP subnets, one for the factory, one for the office, and one for security cameras. These subnets must align with the network segmentation.
+
+3. **IPv4 Addressing:** The company mandates the use of IPv4 addresses with /16 or /24 network masks throughout the network.
+
+4. **Internet Connectivity:** The network design should include an Internet Gateway Router to provide internet connectivity to all segments of the company. This is essential for accessing cloud services and ensuring seamless communication with external networks.
+
+5. **Security and Privacy:** The network must prioritize security and privacy, especially for critical data stored on local servers. Robust security controls and monitoring mechanisms are required to safeguard sensitive information.
+
+6. **Scalability and Redundancy:** The network should be designed with scalability in mind to accommodate future growth. Redundancy should also be considered to ensure high availability and fault tolerance.
+
 
 **Network Topology:**
 
